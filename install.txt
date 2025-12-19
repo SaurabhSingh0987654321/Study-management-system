@@ -1,0 +1,61 @@
+java -version
+javac -version
+You should see something like:
+java version "17.0.x"
+javac 17.0.x
+
+
+
+2) Two Java libraries (JAR files)
+The project uses:
+✔ JFreeChart → for bar chart
+✔ PDFBox → for exporting PDF
+You must download both (JAR files).
+
+🔽 DOWNLOAD LINKS
+A)🔽 JFreeChart (chart library)
+
+Download JFreeChart 1.5.4 ZIP:
+https://repo1.maven.org/maven2/org/jfree/jfreechart/1.5.4/
+
+Download:
+jfreechart-1.5.4.jar
+org.jfree.jfreechart-1.5.4.jar (same name depends on repo)
+jcommon-1.0.23.jar (sometimes included)
+
+B)🔽 PDFBox (PDF export library)
+
+Download PDFBox 2.0.x:
+https://pdfbox.apache.org/download.html
+
+You need these JARs:
+pdfbox-2.0.29.jar
+fontbox-2.0.29.jar
+commons-logging-1.2.jar
+
+
+
+Create a folder called lib
+Put all downloaded JARs inside:
+project/
+   StudentGradeTrackerAdvanced.java
+   lib/
+      jfreechart-1.5.4.jar
+      jcommon-1.0.23.jar
+      pdfbox-2.0.29.jar
+      fontbox-2.0.29.jar
+      commons-logging-1.2.jar
+
+
+
+
+RUNNING THE PROGRAM
+Open terminal / command prompt inside the folder.
+Compile:
+Windows:
+javac -cp "lib/*" StudentGradeTrackerAdvanced.java
+
+
+Run:
+Windows:
+java -cp ".;lib/*" StudentGradeTrackerAdvanced
